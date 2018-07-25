@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830C9A882108AF6600670A32 /* LaunchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C9A872108AF6600670A32 /* LaunchesViewController.swift */; };
+		830C9A902108B07000670A32 /* LaunchesTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C9A8F2108B07000670A32 /* LaunchesTableViewDataSource.swift */; };
+		830C9A922108BB2D00670A32 /* LaunchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C9A912108BB2D00670A32 /* LaunchDetailsViewController.swift */; };
+		830C9A942108BC0200670A32 /* LaunchDetailItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C9A932108BC0200670A32 /* LaunchDetailItemView.swift */; };
 		839C286C210772010069457E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C286B210772010069457E /* AppDelegate.swift */; };
-		839C286E210772010069457E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C286D210772010069457E /* ViewController.swift */; };
 		839C2871210772010069457E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839C286F210772010069457E /* Main.storyboard */; };
 		839C2873210772020069457E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839C2872210772020069457E /* Assets.xcassets */; };
 		839C2876210772020069457E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839C2874210772020069457E /* LaunchScreen.storyboard */; };
+		839C28C7210788390069457E /* LaunchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839C28BA210773DA0069457E /* LaunchKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		839C28B9210773DA0069457E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 839C28B5210773DA0069457E /* LaunchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 839C28AA210773BC0069457E;
+			remoteInfo = LaunchKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		830C9A872108AF6600670A32 /* LaunchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewController.swift; sourceTree = "<group>"; };
+		830C9A8F2108B07000670A32 /* LaunchesTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewDataSource.swift; sourceTree = "<group>"; };
+		830C9A912108BB2D00670A32 /* LaunchDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewController.swift; sourceTree = "<group>"; };
+		830C9A932108BC0200670A32 /* LaunchDetailItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailItemView.swift; sourceTree = "<group>"; };
 		839C2868210772010069457E /* Mobiquity Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobiquity Interview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		839C286B210772010069457E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		839C286D210772010069457E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		839C2870210772010069457E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		839C2872210772020069457E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		839C2875210772020069457E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		839C2877210772020069457E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839C28B5210773DA0069457E /* LaunchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LaunchKit.xcodeproj; path = ../LaunchKit/LaunchKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839C28C7210788390069457E /* LaunchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		830C9A8A2108B00E00670A32 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				830C9A872108AF6600670A32 /* LaunchesViewController.swift */,
+				830C9A912108BB2D00670A32 /* LaunchDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		830C9A8B2108B01400670A32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				839C286B210772010069457E /* AppDelegate.swift */,
+				830C9A8F2108B07000670A32 /* LaunchesTableViewDataSource.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		830C9A8C2108B02000670A32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				839C286F210772010069457E /* Main.storyboard */,
+				839C2874210772020069457E /* LaunchScreen.storyboard */,
+				830C9A932108BC0200670A32 /* LaunchDetailItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		839C285F210772010069457E = {
 			isa = PBXGroup;
 			children = (
+				839C28B5210773DA0069457E /* LaunchKit.xcodeproj */,
 				839C286A210772010069457E /* Mobiquity Interview */,
 				839C2869210772010069457E /* Products */,
+				839C28C6210788390069457E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +103,28 @@
 		839C286A210772010069457E /* Mobiquity Interview */ = {
 			isa = PBXGroup;
 			children = (
-				839C286B210772010069457E /* AppDelegate.swift */,
-				839C286D210772010069457E /* ViewController.swift */,
-				839C286F210772010069457E /* Main.storyboard */,
+				830C9A8C2108B02000670A32 /* Views */,
+				830C9A8B2108B01400670A32 /* Models */,
+				830C9A8A2108B00E00670A32 /* Controllers */,
 				839C2872210772020069457E /* Assets.xcassets */,
-				839C2874210772020069457E /* LaunchScreen.storyboard */,
 				839C2877210772020069457E /* Info.plist */,
 			);
 			path = "Mobiquity Interview";
+			sourceTree = "<group>";
+		};
+		839C28B6210773DA0069457E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				839C28BA210773DA0069457E /* LaunchKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		839C28C6210788390069457E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,12 +173,28 @@
 			mainGroup = 839C285F210772010069457E;
 			productRefGroup = 839C2869210772010069457E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 839C28B6210773DA0069457E /* Products */;
+					ProjectRef = 839C28B5210773DA0069457E /* LaunchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				839C2867210772010069457E /* Mobiquity Interview */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		839C28BA210773DA0069457E /* LaunchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LaunchKit.framework;
+			remoteRef = 839C28B9210773DA0069457E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		839C2866210772010069457E /* Resources */ = {
@@ -135,8 +214,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				839C286E210772010069457E /* ViewController.swift in Sources */,
+				830C9A942108BC0200670A32 /* LaunchDetailItemView.swift in Sources */,
+				830C9A922108BB2D00670A32 /* LaunchDetailsViewController.swift in Sources */,
+				830C9A882108AF6600670A32 /* LaunchesViewController.swift in Sources */,
 				839C286C210772010069457E /* AppDelegate.swift in Sources */,
+				830C9A902108B07000670A32 /* LaunchesTableViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
